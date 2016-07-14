@@ -520,6 +520,7 @@ ol.type li a:hover {
 	transform: scale(1.2);
 }
 .portfolio-item .hover-bg {
+	height: 260px;
 	overflow: hidden;
 	position: relative;
 }
