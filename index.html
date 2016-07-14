@@ -45,7 +45,7 @@
 
 <!-- Javascripts
     ================================================== --> 
-<script type="text/javascript" src="js/main.js"></script>
+<script src="js/main.js"></script>
 
 <script>
  $(function()
@@ -71,7 +71,7 @@ if (u.indexOf('Android') > -1 || u.indexOf('Linux') > -1||u.indexOf('iPhone') > 
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
-<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top" ng-app="mainApp">
     <!-- Navigation -->
     <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
         <div class="container">
@@ -285,34 +285,37 @@ if (u.indexOf('Android') > -1 || u.indexOf('Linux') > -1||u.indexOf('iPhone') > 
     </div>
   </div>
 </div>
-	<div id="achivements" class="section dark-bg">
-			<div class="container">	
+	<div id="achivements" class="section dark-bg" ng-controller="mainController">
+			<div class="container">
+      	<div class="row" id="achieveheader">
+          <h2>CLick these guys!</h2>   
+        </div>
 				<div class="row">
 					<div class="col-md-3 col-sm-3">
-						<div class="achivement-box">
+						<div class="achivement-box"  ng-click="addup1()">
 							<i class="fa fa-smile-o"></i>
-							<span class="count">24</span>
+							<span class="count">{{achivement.age}}</span>
 							<h4>Age Years</h4>                            
 						</div>
 					</div> 
 					<div class="col-md-3 col-sm-3">
-						<div class="achivement-box">
+						<div class="achivement-box"  ng-click="addup2()">
 							<i class="fa fa-code"></i>
-							<span class="count">10000</span>
+							<span class="count">{{achivement.code}}</span>
 							<h4>Code Amount</h4>                            
 						</div>
 					</div> 
 					<div class="col-md-3 col-sm-3">
-						<div class="achivement-box">
+						<div class="achivement-box"  ng-click="addup3()">
 							<i class="fa fa-check-square-o"></i>
-							<span class="count">4800</span>
+							<span class="count">{{achivement.hour}}</span>
                             <h4>Work Hour</h4>
 						</div>
 					</div> 
 					<div class="col-md-3 col-sm-3">
-						<div class="achivement-box">
+						<div class="achivement-box"  ng-click="addup4()">
 							<i class="fa fa-trophy"></i>
-							<span class="count">5</span>
+							<span class="count">{{achivement.project}}</span>
 							<h4>Projects Amount</h4>                            
 						</div>
 					</div> 
@@ -480,6 +483,8 @@ if (u.indexOf('Android') > -1 || u.indexOf('Linux') > -1||u.indexOf('iPhone') > 
   </div>
 </nav>
 
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.1/angular.min.js"></script>
+<script src="js/ng.js"></script>
 
 </body>
 </html>

@@ -314,9 +314,19 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f4d03f', end
 	background: linear-gradient(to bottom, #6f7275 0%, #31353a 100%); /* W3C */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6f7275', endColorstr='#31353a', GradientType=0 ); /* IE6-9 */
 }
+#achieveheader{
+	text-align: center;
+}
 .achivement-box {
 	text-align: center;
 	margin: 20px 0;
+	cursor: pointer;
+	-webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 .achivement-box i.fa {
 	font-size: 60px;
