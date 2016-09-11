@@ -1,0 +1,80 @@
+.Age{
+	display: block;
+}
+
+span{
+	display: block;
+}
+
+.Skill li{
+	display: inline;
+	margin-right: 2px;
+}
+.Skill{
+	padding-top: 15px;
+	font-size: 20px;
+	color: ghostwhite;
+}
+
+.chooseButton{
+	display: block;
+}
+
+.chooseList{
+	min-height:200px; 
+}
+
+.chosenList{
+	min-height:150px;
+}
+
+.forward{
+    width: 100%;
+    height: auto;
+    padding-top: 40px;
+    vertical-align: super;
+}
+
+@media screen and (max-width: 993px){
+	.forward {
+		display: none;
+	}
+}
+
+.chart rect {
+  fill: steelblue;
+}
+
+.chart text {
+  fill: red;
+  font: 10px sans-serif;
+  text-anchor: end;
+}
+
+.chart{
+    -moz-transform:scaleY(-1);
+    -webkit-transform:scaleY(-1);
+    -o-transform:scaleY(-1);
+    transform:scaleY(-1);
+    /*IE*/
+    filter:FlipV;
+}
+
+.chart{
+	margin-left: 125px;
+}
+
+.countV{
+	font-size: 36px;
+    font-weight: 700;
+    color: cornflowerblue;
+    display: block;
+}
+
+.teacher:hover{
+	border-radius: 0;
+}
+
+.chartrow{
+	border-bottom: solid ghostwhite;
+}

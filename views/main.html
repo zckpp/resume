@@ -1,0 +1,47 @@
+<div class="container row-centered">
+  <h2>Vote for your favorite</h2>
+  <div class="chartrow">  
+    <svg class="chart"></svg>
+  </div>
+  <br>
+  <br>  
+  <div class="row iconrow">
+
+    <div class="col-lg-3 col-md-3 col-sm-3">
+      <span class="countV">{{$ctrl.achivement.age}}</span>
+      <img src="images/01.jpg" alt="jay" class="img-circle team-img teacher">
+      <div class="caption">
+        <button class="btn btn-success" ng-click="$ctrl.addup1()">Vote for Jay</button>
+      </div>
+
+    </div>
+
+    <div class="col-lg-3 col-md-3 col-sm-3">
+      <span class="countV">{{$ctrl.achivement.code}}</span>
+      <img src="images/02.jpg" alt="feng" class="img-circle team-img teacher">
+      <div class="caption">
+        <button class="btn btn-success" ng-click="$ctrl.addup2()">Vote for Wang Feng</button>
+      </div>  
+    </div>
+
+    <div class="col-lg-3 col-md-3 col-sm-3">
+      <span class="countV">{{$ctrl.achivement.hour}}</span>
+      <img src="images/03.jpg" alt="ying" class="img-circle team-img teacher">
+      <div class="caption">
+        <button class="btn btn-success" ng-click="$ctrl.addup3()">Vote for Na Ying</button>
+      </div>
+    </div>
+
+    <div class="col-lg-3 col-md-3 col-sm-3">
+      <span class="countV">{{$ctrl.achivement.project}}</span>
+      <img src="images/04.jpg" alt="Halin" class="img-circle team-img teacher">
+      <div class="caption">
+        <button class="btn btn-success" ng-click="$ctrl.addup4()">Vote for Halin</button>
+      </div>
+    </div>
+
+  </div>
+  
+
+
+</div>

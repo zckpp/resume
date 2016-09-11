@@ -1,0 +1,36 @@
+
+<div class="row row-centered">
+  <h2>MY SKILLS</h2>
+  <br>
+  <ul class="Skill">
+    <li ng-repeat="skill in $ctrl.newskills">
+      {{skill}}
+    </li>
+  </ul>
+</div>
+<br>
+<div class="row row-centered">
+  <div class="col-md-2 col-sm-6 col-centered">
+    <h2>Skills List</h2>
+    <br>
+    <select  multiple ng-model="$ctrl.chosen" ng-options="x for x in $ctrl.skills" class="chooseList"></select>
+  </div> 
+
+  <div class="col-md-2 col-xs-0 col-centered">
+    <img class="forward" src="images/forward.png">
+  </div> 
+
+  <div class="col-md-3 col-sm-6 col-centered">
+    <h2>Skills Chosen</h2>
+    <br>
+    <ul class="chosenList list-group">
+      <li ng-repeat="choice in $ctrl.chosen" class="list-group-item">
+        {{choice}}
+      </li>
+    </ul>
+
+    <button ng-click="$ctrl.choose()" class="chooseButton btn btn-primary">Choose</button>
+  </div>
+</div>
+
+<br><br><br>
