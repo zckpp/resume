@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Resume of Quinn</title>
 <meta name="description" content="My name is Quinn, a self-motivated passionate web developer">
-<meta name="keywords" content="Quinn, Chengkun, Zhang, Resume" />
+<meta name="keywords" content="Quinn, Chengkun, Zhang, Resume">
 <meta name="author" content="Quinn">
 <meta HTTP-EQUIV="Pragma" content="no-cache"> 
 <meta HTTP-EQUIV="Cache-Control" content="no-cache"> 
@@ -29,6 +29,7 @@
 
 <!-- Stylesheet
     ================================================== -->
+    <link rel="stylesheet" type="text/css" href="css/loader.min.css">
 <link rel="stylesheet" type="text/css"  href="css/second.css">
 <link rel="stylesheet" type="text/css"  href="css/style.css">
 <link rel="stylesheet" type="text/css" href="css/prettyPhoto.css">
@@ -76,6 +77,27 @@ if (u.indexOf('Android') > -1 || u.indexOf('Linux') > -1||u.indexOf('iPhone') > 
     <![endif]-->
 </head>
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top" ng-app="mainApp">
+
+  <script type="text/javascript">         
+      // wait for everything
+      $('body').click(function(){
+          $('body').addClass('loaded');
+          $('#loader-wrapper .load_title').remove();
+      }); 
+      $(window).load(function(){
+          $('body').addClass('loaded');
+          $('#loader-wrapper .load_title').remove();
+      }); 
+  </script>    
+
+  <div id="loader-wrapper">
+      <div id="loader"></div>
+      <div class="loader-section section-left"></div>
+      <div class="loader-section section-right"></div>
+      <div class="load_title">Loading Quinn's space</div>
+  </div>
+
+  <bg></bg>
   <!-- Navigation -->
   <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
       <div class="container">
@@ -140,5 +162,6 @@ if (u.indexOf('Android') > -1 || u.indexOf('Linux') > -1||u.indexOf('iPhone') > 
 <script src="scripts/comp.js"></script>
 <script src="scripts/comp1.js"></script>
 <script src="scripts/comp2.js"></script>
+<script src="scripts/comp3.js"></script>
 </body>
 </html>
