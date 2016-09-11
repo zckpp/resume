@@ -762,4 +762,6 @@ nav#footer p {
     text-align:left;
     /* inline-block space fix */
     margin-right:-4px;
+    /* ff fix */
+    vertical-align: bottom;
 }
