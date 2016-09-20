@@ -29,9 +29,9 @@
 
 <!-- Stylesheet
     ================================================== -->
-    <link rel="stylesheet" type="text/css" href="css/loader.min.css">
-<link rel="stylesheet" type="text/css"  href="css/second.css">
+<link rel="stylesheet" type="text/css" href="css/loader.min.css">
 <link rel="stylesheet" type="text/css"  href="css/style.css">
+<link rel="stylesheet" type="text/css"  href="css/second.css">
 <link rel="stylesheet" type="text/css" href="css/prettyPhoto.css">
 <link rel="stylesheet" type="text/css" href="fonts/sns_fonts/iconfont.css">
 
@@ -50,7 +50,7 @@
 
 <!-- Javascripts
     ================================================== --> 
-<script src="js/main.js"></script>
+
 
 <script>
  $(function()
@@ -134,7 +134,7 @@ if (u.indexOf('Android') > -1 || u.indexOf('Linux') > -1||u.indexOf('iPhone') > 
                       <a class="page-scroll" href="#contact">contact</a>
                   </li>
                   <li>
-                      <a class="page-scroll" href="#Applications">Applications</a>
+                      <a class="page-scroll hideA" href="#Applications">Applications</a>
                   </li>
               </ul>
           </div>
@@ -146,19 +146,20 @@ if (u.indexOf('Android') > -1 || u.indexOf('Linux') > -1||u.indexOf('iPhone') > 
 
   <resume></resume>  
 
-  <div id="Applications">
+  <div id="Applications" class="hideA">
     <div class="container">
       <skill></skill>
     </div>  
   </div>
 
-  <div class="vote">
+  <div class="vote hideA">
       <chart></chart>
   </div>
 
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.1/angular.js"></script>
-<script src="https://d3js.org/d3.v3.min.js"></script>  
+<script src="https://d3js.org/d3.v3.min.js"></script>
+<script src="js/main.js"></script>  
 <script src="scripts/comp.js"></script>
 <script src="scripts/comp1.js"></script>
 <script src="scripts/comp2.js"></script>

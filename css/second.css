@@ -78,3 +78,9 @@ span{
 .chartrow{
 	border-bottom: solid ghostwhite;
 }
+
+@media screen and (max-width:1200px){
+	.hideA{
+		display: none;
+	}	
+}
